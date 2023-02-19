@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, white ,rgb(250, 224, 207) );
+}
+#app{
+   
+    height: auto;
+    width: 300px;
+    padding: 30px;
+    max-height: 400px;
+    background: white;
+    border: 1px solid rgb(252, 145, 106);
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px rgb(248, 218, 207),-1px -1px 2px rgb(170, 166, 165);
+}
+#app .tittle{
+    color: orangered;
+    text-align: center;
+    font-size: 22px;
+}
+#searchbox{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+}
+#searchbox input{
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    color: rgb(243, 14, 14);
+}
+#searchbox input[type="text"]::placeholder{
+    color: black;
+}
+#app #searchbox .search
+{
+    position: relative;
+    right: 30px;
+    top: 4px;
+   width: 50px;
+   height: 40px;
+    background: orangered;
+    display: grid;
+   place-content: center;
+    cursor: pointer;
+    color: #f3f3fd;
+    border-radius: 50%;
+}
+#app #searchbox .search:hover i{
+    font-size: larger;
+}
+#data{
+    margin: 15px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 230px;
+    overflow-y: scroll;
+}
+#data #impo{
+    font-size: 12px;
+    color: orangered;
+}
+#data #error{
+    font-size: 12px;
+}
+#data #error span{
+    color: orangered;    
+}
+#data .detail{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background: #f3f3fd;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    margin: 5px 0;
+    position: relative;
+}
+#data .detail h3{
+    color: orangered;
+}
+#data .detail p{
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+/* change scroll bar */
+#data::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+    height: 10px;
+}
+#data::-webkit-scrollbar-thumb{
+    height: 30px;
+    background: linear-gradient(orangered, rgb(204, 62, 10));
+    border-radius: 60px;
+}
